@@ -91,6 +91,23 @@ export default function Contact() {
               </div>
             </motion.div>
           </div>
+
+          {/* Developer Details Section */}
+          <motion.div className="mt-16 max-w-2xl mx-auto" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
+            <div className="glass-card-elevated p-8 text-center">
+              <h2 className="text-2xl font-bold mb-1">Developed By</h2>
+              <p className="text-lg font-semibold text-primary mb-0.5">Muzammil Shaik</p>
+              <p className="text-sm text-muted-foreground mb-4">Frontend Developer</p>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm">
+                <a href="mailto:muzammilshaik877@gmail.com" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+                  <Mail className="w-4 h-4" /> muzammilshaik877@gmail.com
+                </a>
+                <a href="tel:+918639836268" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+                  <Phone className="w-4 h-4" /> +91 8639836268
+                </a>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </div>
       <Footer />
