@@ -45,8 +45,14 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-          © 2026 SmartLogix. All rights reserved.
+        <div className="border-t border-border mt-8 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
+          <span>© 2026 SmartLogix. All rights reserved.</span>
+          <div className="flex items-center gap-1.5">
+            <span>Developed by</span>
+            <span className="font-semibold text-foreground">Muzammil Shaik</span>
+            <span>·</span>
+            <a href="mailto:muzammilshaik877@gmail.com" className="hover:text-primary transition-colors">muzammilshaik877@gmail.com</a>
+          </div>
         </div>
       </div>
     </footer>
